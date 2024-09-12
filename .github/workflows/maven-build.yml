@@ -23,7 +23,7 @@ jobs:
           sudo docker tag japp:v1 lakulos/nodeapprepo:mavenimg
           sudo docker push lakulos/nodeapprepo:mavenimg
           sudo docker pull lakulos/nodeapprepo:mavenimg
-          sudo docker run -d --name node-con -p 8080:8080 lakulos/nodeapprepo:mavenimg
+          sudo docker run -d --name maven-container -p 8080:8080 lakulos/nodeapprepo:mavenimg
 
           docker image prune -f
           EOF
